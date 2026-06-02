@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANO MEN — Премиум одежда</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+    <div class="container header__container">
+        <div class="logo">
+           <img src="ChatGPT Image 28 мая 2026 г., 15_02_30.png" alt="KANO MEN" class="logo__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        </div>
+
+        <nav class="nav" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="index.html" class="nav__link">ГЛАВНАЯ</a></li>
+                <li><a href="about.html" class="nav__link">О НАС</a></li>
+                <li><a href="optom.html" class="nav__link">ОПТОМ</a></li>
+                <li><a href="oplata.html" class="nav__link">ДОСТАВКА И ОПЛАТА</a></li>
+                <li><a href="#contacts" class="nav__link">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__icons">
+            <a href="https://2gis.kg/bishkek/geo/70030076169446534/74.575166,42.890345" target="_blank" class="icon-btn header__address-link">
+                <i class="fas fa-map-marker-alt"></i>
+            </a>
+            
+            <button id="admin-toggle" class="icon-btn" title="Админ-панель"><i class="fas fa-user-cog"></i></button>
+            <button id="theme-toggle" class="icon-btn"><i class="fas fa-sun"></i></button>
+            
+            <button class="burger" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+     <section class="hero">
+       
+        <div class="hero__bg-wrapper">
+            <div class="container hero__container">
+                
+                <div class="hero__content">
+                    <h1 class="hero__title">ПРЕМИУМ КАЧЕСТВО.<br>ДЛЯ НАСТОЯЩИХ МУЖЧИН</h1>
+                    <p class="hero__subtitle">Стильная мужская одежда премиум-класса<br>оптом и в розницу</p>
+                    
+                    <div class="hero__buttons">
+                        <a href="#milkyCatalogHeader" class="btn btn--primary">В КАТАЛОГ</a>
+                        <a href="optom.html" class="btn btn--secondary">ОПТОВЫМ КЛИЕНТАМ</a>
+                    </div>
+
+                    <div class="hero__mini-features">
+                        <div class="mini-feature">
+                            <i class="far fa-gem"></i>
+                            <span>Премиальное качество</span>
+                        </div>
+                        <div class="mini-feature">
+                            <i class="fas fa-scroll"></i>
+                            <span>Лучшие ткани и материалы</span>
+                        </div>
+                        <div class="mini-feature">
+                            <i class="fas fa-tshirt"></i>
+                            <span>Актуальный стиль и посадка</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container features__grid">
+   
+            <div class="feature-item animate-on-scroll" style="--delay: 1;">
+                <i class="fas fa-box-open"></i>
+                <div>
+                    <h3>ОПТОМ И РОЗНИЦА</h3>
+                    <p>Гибкие условия для бизнеса и частных клиентов</p>
+                </div>
+            </div>
+            <div class="feature-item animate-on-scroll" style="--delay: 2;">
+                <i class="fas fa-truck"></i>
+                <div>
+                    <h3>БЫСТРАЯ ДОСТАВКА</h3>
+                    <p>По всему Кыргызстану</p>
+                </div>
+            </div>
+            <div class="feature-item animate-on-scroll" style="--delay: 3;">
+                <i class="fas fa-award"></i>
+                <div>
+                    <h3>КАЧЕСТВО ГАРАНТИРОВАНО</h3>
+                    <p>Контроль на всех этапах производства</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section class="categories">
+        <div class="container">
+      
+            <h2 class="section-title animate-on-scroll">КАТЕГОРИИ</h2>
+            
+            <div class="categories__grid">
+     
+                <div class="category-card animate-on-scroll" data-modal="modal-1" style="--delay: 1;">
+                    <div class="category-card__img">
+                        <img src="l_20241-s4gc53z8-guy-98-80-0-189_a.webp" alt="Футболки">
+                    </div>
+                    <h3 class="category-card__title">ФУТБОЛКИ</h3>
+                    <button class="category-card__btn">СМОТРЕТЬ</button>
+                </div>
+
+                <div class="category-card animate-on-scroll" data-modal="modal-2" style="--delay: 2;">
+                    <div class="category-card__img">
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=500" alt="Толстовки">
+                    </div>
+                    <h3 class="category-card__title">ТОЛСТОВКИ</h3>
+                    <button class="category-card__btn">СМОТРЕТЬ</button>
+                </div>
+
+                <div class="category-card animate-on-scroll" data-modal="modal-3" style="--delay: 3;">
+                    <div class="category-card__img">
+                        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=500" alt="Свитшоты">
+                    </div>
+                    <h3 class="category-card__title">СВИТШОТЫ</h3>
+                    <button class="category-card__btn">СМОТРЕТЬ</button>
+                </div>
+
+                <div class="category-card animate-on-scroll" data-modal="modal-4" style="--delay: 4;">
+                    <div class="category-card__img">
+                        <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=500" alt="Брюки">
+                    </div>
+                    <h3 class="category-card__title">БРЮКИ</h3>
+                    <button class="category-card__btn">СМОТРЕТЬ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="milky-cat-section">
+
+  <div class="milky-cat-header animate-on-scroll">
+    <h2  id="milkyCatalogHeader" class="milky-cat-header__title">Каталог</h2>
+    <div class="milky-cat-header__line"></div>
+  </div>
+  
+
+  <div class="milky-cat-grid animate-on-scroll-grid" id="milkyCatalogGrid"></div>
+</section>
+
+<div class="milky-cat-modal" id="milkyCatalogModal">
+  <div class="milky-cat-modal__content">
+    <button class="milky-cat-modal__close" id="milkyCloseModal">&times;</button>
+    <div class="milky-cat-modal__grid">
+      <div class="milky-cat-carousel">
+        <div class="milky-cat-carousel__track" id="milkyCarouselTrack"></div>
+        <button class="milky-cat-carousel__btn milky-cat-carousel__btn--prev" id="milkyCarouselPrev">❮</button>
+        <button class="milky-cat-carousel__btn milky-cat-carousel__btn--next" id="milkyCarouselNext">❯</button>
+      </div>
+      <div class="milky-cat-modal__body">
+        <h2 class="milky-cat-modal__title" id="milkyModalTitle"></h2>
+        <div class="milky-cat-modal__price" id="milkyModalPrice"></div>
+        <p class="milky-cat-modal__desc" id="milkyModalDesc"></p>
+        <div class="milky-cat-modal__specs-title">Характеристики</div>
+        <div id="milkyModalSpecs"></div>
+        <button class="milky-cat-btn milky-cat-btn--primary milky-cat-modal__buy-btn" id="milkyModalBuyBtn">Купить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer id="contacts" class="footer animate-on-scroll">
+    <div class="container footer__container">
+        <div class="footer__about">
+            <span class="footer__logo">
+                <img src="ChatGPT Image 28 мая 2026 г., 15_02_30.png" alt="KANO MEN">
+            </span>
+        </div>
+
+        <div class="footer__links">
+            <h3>НАВИГАЦИЯ</h3>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="optom.html">Оптoм</a></li>
+                <li><a href="oplata.html">Доставка и оплата</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__socials-block">
+            <h3>МЫ В СОЦСЕТЯХ</h3>
+            <p class="footer__phone">+996 (999) 25-24-26</p>
+            
+            <div class="footer__socials">
+                <a href="https://t.me/Canocollection" target="_blank" rel="noopener noreferrer" class="social-icon social-icon--telegram" title="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://wa.me/996999252426" target="_blank" rel="noopener noreferrer" class="social-icon social-icon--whatsapp" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://instagram.com/kano_collections" target="_blank" rel="noopener noreferrer" class="social-icon social-icon--instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <p class="footer__copy">&copy; 2026 KANO MEN. Все права защищены.</p>
+    </div>
+</footer>
+
+<div class="admin-login" id="adminLoginPanel">
+    <div class="admin-login__content">
+        <button class="admin-login__close" id="adminLoginCloseBtn" aria-label="Закрыть окно входа">&times;</button>
+        <h2 class="admin-login__title">Вход в админ-панель</h2>
+        <p class="admin-login__subtitle">Введите логин и пароль для доступа.</p>
+
+        <form id="adminLoginForm" class="admin-login__form" autocomplete="off">
+            <div class="admin-login__field">
+                <label for="admin-login">Логин</label>
+                <input id="admin-login" name="admin-login" type="text" required placeholder="Введите логин" autocomplete="off">
+            </div>
+            <div class="admin-login__field">
+                <label for="admin-password">Пароль</label>
+                <input id="admin-password" name="admin-password" type="password" required placeholder="Введите пароль" autocomplete="new-password">
+            </div>
+            <div class="admin-login__error" id="adminLoginError" aria-live="polite"></div>
+            <button class="btn btn--primary admin-login__submit" type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+
+<div class="admin-panel" id="adminPanel">
+    <div class="admin-panel__content">
+        <div class="admin-panel__header">
+            <h2 class="admin-panel__title">Админ-панель</h2>
+            <button class="admin-panel__close" id="adminCloseBtn" aria-label="Закрыть админку">&times;</button>
+        </div>
+        <p class="admin-panel__subtitle">Добавляйте новый товар или удаляйте существующие позиции из каталога.</p>
+        <button class="admin-panel__logout admin-panel__logout--top" id="adminLogoutBtn" type="button" title="Выход">Выход</button>
+
+        <form id="adminProductForm" class="admin-panel__form">
+            <div class="admin-panel__field">
+                <label for="product-title">Название товара</label>
+                <input id="product-title" name="product-title" type="text" required>
+            </div>
+            <div class="admin-panel__field">
+                <label for="product-price">Цена</label>
+                <input id="product-price" name="product-price" type="text" required placeholder="Например: 4 200 KGS">
+            </div>
+            <div class="admin-panel__field">
+                <label for="product-image">URL изображения</label>
+                <input id="product-image" name="product-image" type="url" required placeholder="https://... или local path">
+            </div>
+            <div class="admin-panel__field">
+                <label for="product-description">Описание</label>
+                <textarea id="product-description" name="product-description" rows="3" required></textarea>
+            </div>
+            <div class="admin-panel__field">
+                <label for="product-specs">Характеристики (каждая в новой строке, формат "Ключ: Значение")</label>
+                <textarea id="product-specs" name="product-specs" rows="4" placeholder="Материал: Хлопок
+Производство: Россия"></textarea>
+            </div>
+            <button class="btn btn--primary admin-panel__submit" type="submit">Добавить товар</button>
+        </form>
+
+        <div class="admin-panel__list-block">
+            <h3>Товары в каталоге</h3>
+            <div id="adminProductList" class="admin-panel__product-list"></div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+</body>
+</html>
+

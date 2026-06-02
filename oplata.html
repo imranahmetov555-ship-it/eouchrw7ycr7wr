@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANO MEN — Премиум одежда</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<style>
+  
+.kano-about {
+    background-color: #fcfbfa; 
+    padding: 60px 0; 
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    color: #2b2520; 
+   
+}
+
+.kano-about__main-title-brand {
+    color: rgba(187,166,113); 
+}
+
+
+body.dark-theme .kano-about__main-title-brand {
+    color: rgba(187,166,113); 
+}
+
+.kano-about__container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 260px 1fr 260px;
+    gap: 40px; 
+    align-items: start;
+}
+
+.kano-about__center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 30px; 
+}
+
+.kano-about__main-title {
+    font-size: 24px; 
+    letter-spacing: 4px; 
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 400; 
+}
+
+.kano-about__main-text {
+    font-size: 14px;
+    line-height: 1.8; 
+    color: #5c5249;
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.kano-about__inner-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 30px;
+    width: 100%;
+    min-height: 220px; 
+    border-top: 1px solid #eae5df; 
+    border-bottom: 1px solid #eae5df;
+    padding: 20px 0;
+    overflow: hidden; 
+}
+
+.kano-about__inner-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 180px; 
+    overflow: hidden; 
+    
+}
+
+.kano-about__inner-card img {
+    width: 100%;
+    height: 100%;
+    max-height: 220px; 
+    object-fit: cover;
+    transition: transform 0.6s ease-in-out;
+    border-radius: 8px;
+}
+
+.kano-about__inner-card:hover img {
+    transform: scale(1.08);
+    border-radius: 8px;
+}
+
+.kano-about__inner-card--text {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.kano-about__mini-desc h3 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.kano-about__mini-desc p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #6e6255;
+    margin: 0;
+}
+
+.kano-about__cta {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+}
+
+.kano-about__button {
+    display: inline-block;
+    background-color: #8c7355; 
+    color: #ffffff;
+    padding: 14px 40px; 
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.kano-about__button:hover {
+    background-color: transparent;
+    color: #8c7355;
+    border-color: #8c7355;
+}
+
+.kano-about__side-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kano-about__image-wrapper {
+    width: 100%;
+    height: 380px; 
+    overflow: hidden;
+}
+
+.kano-about__image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease-in-out;
+    border-radius: 8px;
+}
+
+.kano-about__side-card:hover .kano-about__image-wrapper img {
+    transform: scale(1.08);
+    border-radius: 8px;
+}
+
+.kano-about__card-footer {
+    text-align: center;
+}
+
+.kano-about__icon {
+    font-size: 8px;
+    color: #8c7355;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.kano-about__card-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .kano-about__container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .kano-about__center-content {
+        display: contents;
+    }
+
+    .kano-about__header {
+        order: 1;
+    }
+
+    .kano-about__inner-grid {
+        order: 2;
+    }
+
+
+    .kano-about__container > .kano-about__side-card:first-child {
+        order: 3 !important;
+    }
+
+  
+    .kano-about__container > .kano-about__side-card:last-child {
+        order: 4 !important;
+    }
+
+    .kano-about__side-card {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .kano-about__cta {
+        order: 5;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .kano-about__inner-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+        min-height: auto;
+        gap: 20px;
+    }
+    .kano-about__inner-card img {
+        height: 180px;
+    }
+}
+body.dark-theme .kano-about {
+    background-color: #1a1a1a; 
+    color: #f4f0eb; 
+}
+
+body.dark-theme .kano-about__main-text {
+    color: #ded5ca; 
+}
+
+body.dark-theme .kano-about__inner-grid {
+    border-top: 1px solid #332f2b; 
+    border-bottom: 1px solid #332f2b;
+}
+
+body.dark-theme .kano-about__mini-desc p {
+    color: #ded5ca; 
+}
+
+body.dark-theme .kano-about__button {
+    background-color: #92795d; 
+    color: #ffffff;
+    border-color: #92795d;
+}
+
+body.dark-theme .kano-about__button:hover {
+    background-color: transparent;
+    color: #f4f0eb;
+    border-color: #f4f0eb;
+}
+
+
+body.dark-theme .kano-about {
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+}
+
+body.dark-theme .kano-about__main-text {
+    color: #ffffff; 
+}
+
+body.dark-theme .kano-about__brand-name {
+    color: rgba(187,166,113); 
+}
+
+body.dark-theme .kano-about__inner-grid {
+    border-top: 1px solid #332f2b; 
+    border-bottom: 1px solid #332f2b;
+}
+
+body.dark-theme .kano-about__mini-desc p {
+    color: #ffffff; 
+}
+
+body.dark-theme .kano-about__button {
+    background-color: #92795d; 
+    color: #ffffff;
+    border-color: #92795d;
+}
+
+body.dark-theme .kano-about__button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+body.dark-theme .kano-about__icon {
+    color: #e0dbb5; 
+}
+
+:root {
+    --color-bg: #f4f0eb;       
+    --color-dark: #3a352f;     
+    --color-gold: #967f63;    
+    --color-white: #ffffff;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+   
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-dark);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.header {
+    background-color: var(--color-bg);
+    border-bottom: 1px solid rgba(150, 127, 99, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 135px; 
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    position: relative; 
+}
+
+.logo {
+    position: absolute; 
+    left: 20px;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.logo__img {
+    height: 230px; 
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.05)); 
+    transition: transform 0.3s ease; 
+     transform: translateX(100px);
+     opacity: 0;
+      animation: kanoSlideInUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+
+.nav {
+    margin-left: 390px; 
+    transition: var(--transition);
+    z-index: 100;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav__link {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: var(--transition);
+}
+.header__address-link {
+    margin-right: 10px;
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-gold);
+    transition: var(--transition);
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto; 
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--color-dark);
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.icon-btn:hover {
+    color: var(--color-gold);
+}
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart-count {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.burger span {
+    width: 25px;
+    height: 2px;
+    background-color: var(--color-dark);
+    transition: var(--transition);
+}
+
+@media (max-width: 992px) {
+    .nav {
+        margin-left: 140px; 
+    }
+    .logo__img {
+        height: 75px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        margin-left: 0; 
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--color-bg);
+        z-index: 99;
+        padding: 40px;
+    }
+    
+    .nav.active {
+        left: 0;
+    }
+    
+    .logo__img {
+        height: 90px; 
+        max-height: none; 
+        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08)); 
+    }
+}
+
+
+.burger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.burger.active span:nth-child(2) { opacity: 0; }
+.burger.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+
+
+
+
+
+
+  
+@media (max-width: 992px) {
+    .nav {
+        margin-left: 140px; 
+    }
+    .logo__img {
+        height: 45px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        margin-left: 0;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--color-bg);
+        z-index: 99;
+        padding: 40px;
+    }
+    
+    .nav.active {
+        left: 0;
+    }
+
+
+    .logo__img {
+        height: 90px; 
+        max-height: none; 
+        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08)); 
+    }
+
+}
+
+@media (max-width: 992px) {
+    
+    .hero__bg-wrapper {
+        background-position: center;
+    }
+    
+   
+    .hero__bg-wrapper::before {
+        background: linear-gradient(to bottom, 
+            rgba(244, 240, 235, 0.9) 0%, 
+            rgba(244, 240, 235, 0.95) 70%,
+            rgba(244, 240, 235, 1) 100%);
+    }
+
+
+    .hero__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: auto;
+        padding-bottom: 0; 
+    }
+
+   
+    .hero__content {
+        flex: 0 0 100%;
+        padding: 40px 0 20px 0;
+        z-index: 3;
+    }
+
+    .hero__title {
+        font-size: 32px; 
+        margin-bottom: 15px;
+    }
+
+    .hero__subtitle {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+  
+    .hero__buttons {
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 35px;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+    }
+
+   
+    .hero__mini-features {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .mini-feature {
+        align-items: center; 
+        max-width: 160px;
+    }
+
+    
+    .hero__man-wrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-height: 400px; 
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 20px;
+    }
+
+    .hero__man-img {
+        height: auto;
+        width: 100%;
+        max-width: 320px; 
+        object-fit: contain;
+        display: block;
+    }
+
+
+    .nav {
+        margin-left: 150px;
+    }
+    .logo__img {
+        height: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        margin-left: 0;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--color-bg);
+        z-index: 99;
+        padding: 40px;
+    }
+    
+    .nav.active {
+        left: 0;
+    }
+
+ 
+    .logo__img {
+        height: 125px;
+    }
+
+    .hero__title {
+        font-size: 26px; 
+    }
+
+    .hero__buttons {
+        flex-direction: column; 
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto 35px auto;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    .hero__title {
+        font-size: 20px; 
+        line-height: 1.3;
+    }
+}
+@media (max-width: 992px) {
+    
+    .features__grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature-item:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid rgba(150, 127, 99, 0.2);
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    
+    
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .modal__body {
+        flex-direction: column;
+    }
+    .slider {
+        height: 250px;
+    }
+}
+
+
+.footer {
+    background-color: #ffffff; 
+    border-top: 1px solid rgba(150, 127, 99, 0.2);
+    padding: 60px 0 30px 0;
+    color: var(--color-dark);
+    border: 2px solid #3d3630;
+    box-shadow: 0 -4px 15px rgba(150, 127, 99, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before,
+.footer::after,
+.footer__container::before,
+.footer__container::after,
+.footer__copy::before,
+.footer__copy::after,
+.footer__about::before,
+.footer__links::before,
+.footer__links::after,
+.footer__socials-block::before {
+    content: '';
+    position: absolute;
+    background: #967f63;
+    border-radius: 4px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.footer::before { width: 90px; height: 4px; top: 10%; left: 3%; transform: rotate(-15deg); animation: lineFloat1 2s infinite ease-in-out alternate; }
+.footer::after { width: 110px; height: 3px; bottom: 15%; right: 2%; transform: rotate(20deg); animation: lineFloat2 2s infinite ease-in-out alternate; }
+.footer__container::before { width: 80px; height: 4px; top: 40%; left: 15%; transform: rotate(10deg); animation: lineFloat3 2.5s infinite ease-in-out alternate-reverse; }
+
+.footer__copy::before { width: 70px; height: 4px; bottom: -5px; left: 35%; transform: rotate(15deg); animation: lineFloat5 2.2s infinite ease-in-out alternate-reverse; }
+.footer__copy::after { width: 95px; height: 3px; bottom: 10px; right: 25%; transform: rotate(-10deg); animation: lineFloat6 2.8s infinite ease-in-out alternate; }
+.footer__about::before { width: 85px; height: 4px; top: 25%; left: 28%; transform: rotate(30deg); animation: lineFloat7 2.2s infinite ease-in-out alternate-reverse; }
+.footer__links::before { width: 75px; height: 3px; top: 35%; right: 42%; transform: rotate(-5deg); animation: lineFloat8 2.8s infinite ease-in-out alternate; }
+.footer__links::after { width: 105px; height: 4px; bottom: 45%; right: 18%; transform: rotate(18deg); animation: lineFloat9 2.6s infinite ease-in-out alternate-reverse; }
+.footer__socials-block::before { width: 90px; height: 3px; top: 50%; right: 5%; transform: rotate(-20deg); animation: lineFloat10 2.1s infinite ease-in-out alternate; }
+
+@keyframes lineFloat1 { 0% { transform: translate(0, 0) rotate(-15deg); opacity: 0.3; } 100% { transform: translate(30px, -20px) rotate(-5deg); opacity: 0.7; } }
+@keyframes lineFloat2 { 0% { transform: translate(0, 0) rotate(20deg); opacity: 0.25; } 100% { transform: translate(-35px, -15px) rotate(5deg); opacity: 0.6; } }
+@keyframes lineFloat3 { 0% { transform: translate(0, 0) rotate(10deg); opacity: 0.3; } 100% { transform: translate(-25px, 25px) rotate(-10deg); opacity: 0.65; } }
+@keyframes lineFloat4 { 0% { transform: translate(0, 0) rotate(-25deg); opacity: 0.25; } 100% { transform: translate(40px, 15px) rotate(-15deg); opacity: 0.7; } }
+@keyframes lineFloat5 { 0% { transform: translate(0, 0) rotate(15deg); opacity: 0.3; } 100% { transform: translate(-20px, -20px) rotate(5deg); opacity: 0.6; } }
+@keyframes lineFloat6 { 0% { transform: translate(0, 0) rotate(-10deg); opacity: 0.2; } 100% { transform: translate(30px, -10px) rotate(-25deg); opacity: 0.55; } }
+@keyframes lineFloat7 { 0% { transform: translate(0, 0) rotate(30deg); opacity: 0.35; } 100% { transform: translate(25px, 30px) rotate(15deg); opacity: 0.75; } }
+@keyframes lineFloat8 { 0% { transform: translate(0, 0) rotate(-5deg); opacity: 0.25; } 100% { transform: translate(-30px, -15px) rotate(10deg); opacity: 0.65; } }
+@keyframes lineFloat9 { 0% { transform: translate(0, 0) rotate(18deg); opacity: 0.3; } 100% { transform: translate(20px, -30px) rotate(28deg); opacity: 0.7; } }
+@keyframes lineFloat10 { 0% { transform: translate(0, 0) rotate(-20deg); opacity: 0.2; } 100% { transform: translate(-40px, 20px) rotate(-5deg); opacity: 0.6; } }
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; 
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer__copy {
+    grid-column: 1 / -1; 
+    text-align: center;  
+    border-top: 1px solid rgba(150, 127, 99, 0.15); 
+    width: 100%;
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: -40px;
+    position: relative;
+    letter-spacing: 0.5px;
+   
+}
+
+
+
+.footer__links h3,
+.footer__socials-block h3 {
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #4a4035;
+}
+
+.footer__links ul {
+    list-style: none;
+}
+
+.footer__links li {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #5a5045;
+}
+
+.footer__links a {
+    font-size: 16px;
+    opacity: 0.8;
+    display: inline-block;
+    letter-spacing: 0px;
+    transition: color 0.4s ease, letter-spacing 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+}
+
+.footer__links a:hover {
+    color: var(--color-gold);
+    opacity: 1;
+    letter-spacing: 1px;
+    transform: translateY(-2px);
+}
+
+.footer__phone {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-bg); 
+    color: var(--color-dark);
+    font-size: 18px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon--telegram:hover {
+    background-color: #0088cc;
+}
+
+.social-icon--whatsapp:hover {
+    background-color: #25d366;
+}
+
+.social-icon--instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+
+.footer__about {
+    position: relative;
+    padding-top: 300px; 
+}
+
+.footer__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px; 
+}
+
+.footer__logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(0 0 0px rgba(150, 127, 99, 0));
+    transition: all 0.4s ease;
+    animation: logoGlow 3s infinite alternate ease-in-out;
+}
+
+.footer__logo img:hover {
+    transform: scale(1.05) rotate(-1deg);
+    filter: drop-shadow(0 0 15px rgba(150, 127, 99, 0.5));
+}
+
+@keyframes logoGlow {
+    0% { filter: drop-shadow(0 0 2px rgba(150, 127, 99, 0.15)); }
+    100% { filter: drop-shadow(0 0 8px rgba(150, 127, 99, 0.4)); }
+}
+
+@media (max-width: 992px) {
+    .footer__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 776px) {
+    .footer {
+        padding: 40px 0 30px 0;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .footer__about {
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+.footer__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px; 
+}
+    .footer__text {
+        max-width: 100%;
+    }
+.footer__copy{
+    margin-top: 20px;
+}
+    .footer__links a:hover {
+        padding-left: 0;
+        letter-spacing: 0.5px;
+    }
+.category-card{
+    width: 100px;
+}
+    .footer__socials {
+        justify-content: center;
+    }
+}
+
+
+
+
+.footer__links h3,
+.footer__socials-block h3 {
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer__links h3::after,
+.footer__socials-block h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px; 
+    height: 2px;
+    background-color: var(--color-gold, #735d41);
+    opacity: 0.5;
+}
+#theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: rgba(150, 127, 99, 0.1);
+    transform: scale(1.1);
+}
+
+#theme-toggle i {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease;
+}
+
+#theme-toggle.clicked i {
+    transform: rotate(360deg) scale(0);
+}
+
+body.dark-theme {
+    --color-bg: #1a1a1a;
+    --color-dark: #f4f0eb;
+    --color-white: #242424;
+}
+
+body.dark-theme #theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .header {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .nav {
+    background-color: #1a1a1a;
+}
+
+body.dark-theme .hero,
+body.dark-theme .hero__bg-wrapper {
+    background-color: #1a1a1a;
+}
+
+body.dark-theme .hero__bg-wrapper::before {
+    background: linear-gradient(to right, 
+        rgba(26, 26, 26, 1) 0%, 
+        rgba(26, 26, 26, 0.9) 35%, 
+        rgba(26, 26, 26, 0.4) 60%, 
+        rgba(26, 26, 26, 0) 100%);
+}
+
+body.dark-theme .features {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .milky-cat-card,
+body.dark-theme .milky-cat-card__info {
+    background-color: #242424;
+    border-color: #333333;
+}
+
+body.dark-theme .milky-cat-card__title {
+    color: #f4f0eb;
+}
+
+body.dark-theme .milky-cat-modal__content {
+    background-color: #242424;
+    border-color: #333333;
+}
+
+body.dark-theme .milky-cat-modal__title,
+body.dark-theme .milky-cat-modal__desc,
+body.dark-theme .milky-cat-modal__specs-title,
+body.dark-theme .milky-cat-modal__spec-value {
+    color: #f4f0eb;
+}
+
+body.dark-theme .footer {
+    background-color: #242424;
+    color: #f4f0eb;
+}
+
+body.dark-theme .footer__links h3, 
+body.dark-theme .footer__socials-block h3,
+body.dark-theme .footer__links li {
+    color: #f4f0eb;
+}
+
+@media (max-width: 992px) {
+    body.dark-theme .hero__bg-wrapper::before {
+        background: linear-gradient(to bottom, rgba(26, 26, 26, 0.85) 0%, rgba(26, 26, 26, 0.95) 100%);
+    }
+}
+
+
+
+body.dark-theme .hero__title {
+    color: #e0dbb5;
+}
+
+body.dark-theme .hero__subtitle {
+    color: #ded5ca;
+}
+
+body.dark-theme .mini-feature span {
+    color: #ded5ca;
+}
+
+body.dark-theme .feature-item h3 {
+    color: #f4f0eb;
+}
+
+body.dark-theme .feature-item p {
+    color: #ded5ca;
+}
+
+body.dark-theme .section-title {
+    color: #f4f0eb;
+}
+
+body.dark-theme .category-card {
+    background-color: #242424;
+}
+
+body.dark-theme .category-card__title {
+    color: #f4f0eb;
+}
+
+body.dark-theme .category-card__btn {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ded5ca;
+}
+
+body.dark-theme .milky-cat-header__title {
+    color: #ffffff;
+}
+
+body.dark-theme .milky-cat-modal__close {
+    background: #333333;
+    color: #e0dbb5;
+}
+
+body.dark-theme .milky-cat-modal__close:hover {
+    background-color: #444444;
+}
+
+body.dark-theme .milky-cat-carousel {
+    background-color: #1a1a1a;
+}
+
+body.dark-theme .milky-cat-carousel__btn {
+    background: rgba(36, 36, 36, 0.8);
+    color: #f4f0eb;
+}
+
+body.dark-theme .milky-cat-carousel__btn:hover {
+    background: #242424;
+}
+
+body.dark-theme .btn--primary {
+    background-color: #92795d;
+    color: #ffffff;
+    border-color: #92795d;
+}
+
+body.dark-theme .btn--primary:hover {
+    background-color: transparent;
+    color: #f4f0eb;
+    border-color: #f4f0eb;
+}
+
+body.dark-theme .btn--secondary {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ded5ca;
+    background: transparent;
+}
+
+body.dark-theme .btn--secondary:hover {
+    background-color: #92795d;
+    color: #ffffff;
+    border-color: #92795d;
+}
+
+
+
+body.dark-theme .mini-feature i {
+    color: #e0dbb5;
+}
+
+body.dark-theme .category-card__btn {
+    border-color: rgba(244, 240, 235, 0.4);
+    color: #f4f0eb;
+}
+
+body.dark-theme .category-card__btn:hover {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    border-color: var(--color-gold);
+}
+    
+body.dark-theme .footer{
+border:none
+}
+body.dark-theme .footer__links li{
+    color: #ffffff;
+}
+.nav {
+    transition: left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.3s ease;
+}
+
+body.dark-theme .nav {
+    transition: left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.3s ease;
+}
+body.dark-theme .kano-feature-card{
+    background-color: #242424;
+    border-color: #333333;
+}
+body.dark-theme .kano-card-title {
+    color: #f4f0eb;
+}
+body.dark-theme .kano-card-text {
+    color: #d8d8d8;
+}
+
+.kano-about__brand-name{
+    color:rgba(187,166,113)
+}
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: opacity, transform;
+}
+
+
+.animate-on-scroll[style*="--delay"] {
+    transition-delay: calc(var(--delay) * 0.12s); 
+}
+
+
+.animate-on-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-on-scroll-grid > div {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+
+.animate-on-scroll-grid.show > div {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.animate-on-scroll-grid.show > div:nth-child(1) { transition-delay: 0.1s; }
+.animate-on-scroll-grid.show > div:nth-child(2) { transition-delay: 0.2s; }
+.animate-on-scroll-grid.show > div:nth-child(3) { transition-delay: 0.3s; }
+.animate-on-scroll-grid.show > div:nth-child(4) { transition-delay: 0.4s; }
+.animate-on-scroll-grid.show > div:nth-child(5) { transition-delay: 0.5s; }
+.animate-on-scroll-grid.show > div:nth-child(6) { transition-delay: 0.6s; }
+.animate-on-scroll-grid.show > div:nth-child(7) { transition-delay: 0.7s; }
+.animate-on-scroll-grid.show > div:nth-child(8) { transition-delay: 0.8s; }
+
+body.dark-theme .kano-infographic-section {
+    --kano-dark: #f5f4f3;
+    --kano-muted: #bda89b;
+    --kano-border: #4a4441;
+    --kano-bg-light: transparent;
+}
+
+body.dark-theme .kano-main-banner {
+    background: transparent;
+}
+
+body.dark-theme .kano-tile-box {
+    background: transparent;
+}
+
+body.dark-theme .kano-perk-card {
+    background: transparent;
+    border-color: var(--kano-border);
+}
+
+body.dark-theme .kano-perk-card p {
+    color: #d8d3d0;
+}
+.kano-reveal, 
+.kano-grid-title, 
+.kano-tile-box, 
+.kano-perk-card {
+    opacity: 0;
+    transform: translateY(-30px);
+    will-change: transform, opacity;
+}
+
+.kano-visible {
+    animation: kanoSlideInDown 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes kanoSlideInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@import url('https://googleapis.com');
+
+.kano-infographic-section {
+    --kano-gold: rgba(187, 166, 113, 1);
+    --kano-dark: #332f2c;
+    --kano-muted: #5e5753;
+    --kano-border: #e2dbd5;
+    --kano-bg-light: #fdfcfb;
+    
+    font-family: 'Montserrat', sans-serif;
+    color: var(--kano-dark);
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.kano-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: kanoSlideInUp 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.kano-main-banner {
+    background: var(--kano-bg-light);
+    border: 2px solid var(--kano-gold);
+    padding: 40px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.kano-main-banner h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--kano-dark);
+}
+.kano-brand-highlight {
+    color: var(--kano-gold);
+}
+.kano-main-banner h2 svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--kano-gold);
+}
+.kano-main-banner p {
+    font-size: 0.95rem;
+    color: var(--kano-muted);
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 900px;
+}
+
+.kano-grid-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 45px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--kano-gold);
+    display: inline-block;
+}
+
+.kano-tiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.kano-tile-box {
+    background: #ffffff;
+    border: 1px solid var(--kano-border);
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+.kano-tile-box:hover {
+    border-color: var(--kano-gold);
+    box-shadow: 0 12px 24px rgba(187, 166, 113, 0.12);
+    transform: translateY(-3px);
+}
+
+.kano-tile-icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--kano-gold);
+    margin-bottom: 20px;
+}
+.kano-tile-box h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+}
+.kano-tile-box p {
+    font-size: 0.88rem;
+    color: var(--kano-muted);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.kano-perks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.kano-perk-card {
+    background: var(--kano-dark);
+    color: #ffffff;
+    border: 1px solid var(--kano-dark);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+      transition: all 0.3s ease;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.kano-perk-card .kano-tile-icon {
+    fill: var(--kano-gold);
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+.kano-perk-card h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: var(--kano-gold);
+}
+.kano-perk-card p {
+    font-size: 0.88rem;
+    color: #e2dbd5;
+    line-height: 1.5;
+}
+
+
+
+.kano-perk-card:hover {
+   border-color: var(--kano-gold) !important;
+    box-shadow: 0 12px 24px rgba(187, 166, 113, 0.12);
+    transform: translateY(-3px);
+}
+.kano-del-1 { animation-delay: 0.1s; }
+.kano-del-2 { animation-delay: 0.2s; }
+.kano-del-3 { animation-delay: 0.3s; }
+
+@keyframes kanoSlideInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .kano-main-banner { padding: 25px 20px; }
+    .kano-main-banner h2 { font-size: 1.3rem; }
+    .kano-perk-card { flex-direction: column; gap: 15px; }
+}
+
+</style>
+    <header class="header">
+    <div class="container header__container">
+        <div class="logo">
+           <img src="ChatGPT Image 28 мая 2026 г., 15_02_30.png" alt="KANO MEN" class="logo__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        </div>
+
+        <nav class="nav" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">ГЛАВНАЯ</a></li>
+                <li><a href="about.html" class="nav__link">О НАС</a></li>
+                <li><a href="optom.html" class="nav__link">ОПТОМ</a></li>
+                <li><a href="oplata.html" class="nav__link">ДОСТАВКА И ОПЛАТА</a></li>
+                <li><a href="#contacts" class="nav__link">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__icons">
+            <a href="https://2gis.kg/bishkek/geo/70030076169446534/74.575166,42.890345" target="_blank" class="icon-btn header__address-link">
+                <i class="fas fa-map-marker-alt"></i>
+            </a>
+            
+            <button class="icon-btn"><i class="fas fa-user"></i></button>
+            <button id="theme-toggle" class="icon-btn"><i class="fas fa-sun"></i></button>
+            
+            <button class="burger" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  <div class="kano-infographic-section">
+
+    <div class="kano-main-banner kano-reveal">
+        <h2>
+            <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H1v13h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-4-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm12.5-3c-.28 0-.5-.22-.5-.5s.22-.5 0.5-.5 0.5.22.0.5-.22.5-.5.5zm0 3c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+            Доставка и оплата
+        </h2>
+        <p>В <span class="kano-brand-highlight">KANO MEN</span> мы обеспечиваем individual подход к каждому клиенту. Мы работаем на территории Кыргызстана, поэтому все детали доставки и оплаты согласовываются напрямую с менеджером в диалоге, чтобы подобрать самый быстрый и удобный для вас вариант.</p>
+    </div>
+
+    <div class="kano-grid-title kano-reveal kano-del-1">Как это работает?</div>
+    <div class="kano-tiles-grid">
+        <div class="kano-tile-box kano-reveal kano-del-1">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+            <h4>Переход в мессенджер</h4>
+            <p>Вы выбираете понравившуюся модель в каталоге и нажимаете на кнопку связи. Вы сразу переходите в прямой чат с менеджером.</p>
+        </div>
+        <div class="kano-tile-box kano-reveal kano-del-2">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <h4>Обсуждение деталей</h4>
+            <p>В чате наш специалист проверяет наличие нужного размера, отправляет живые фото или замеры вещей при необходимости.</p>
+        </div>
+        <div class="kano-tile-box kano-reveal kano-del-3">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm8.57-4.75c-.21-.48-.68-.8-1.21-.8h-1.36c-.55 0-1-.45-1-1v-2c0-.55-.45-1-1-1H11V7c0-.55-.45-1-1-1H8V4.5c0-.28.22-.5.5-.5H14c1.1 0 2 .9 2 2v1h2c1.1 0 2 .9 2 2v2.6c0 .87-.57 1.66-1.43 1.83z"/></svg>
+            <h4>Согласование</h4>
+            <p>Менеджер рассчитывает точный тариф курьера до вашего адреса, бронирует вещь и отправляет реквизиты.</p>
+        </div>
+    </div>
+
+    <div class="kano-grid-title kano-reveal kano-del-2">География и способы доставки</div>
+    <div class="kano-tiles-grid">
+        <div class="kano-tile-box kano-reveal kano-del-1">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <h4>По Бишкеку</h4>
+            <p>Оперативная курьерская доставка в день заказа или на следующий день. Доступна примерка перед покупкой.</p>
+        </div>
+        <div class="kano-tile-box kano-reveal kano-del-2">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            <h4>Регионы Кыргызстана</h4>
+            <p>Отправка через курьерские службы, региональное такси или попутный транспорт — выбираем самый быстрый путь.</p>
+        </div>
+        <div class="kano-tile-box kano-reveal kano-del-3">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 13c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+            <h4>Самовывоз</h4>
+            <p>При желании вы всегда можете забрать свой оформленный заказ самостоятельно из нашего шоурума/склада в Бишкеке.</p>
+        </div>
+    </div>
+
+    <div class="kano-grid-title kano-reveal kano-del-3">Способы оплаты</div>
+    <div class="kano-tiles-grid" style="margin-bottom: 50px;">
+        <div class="kano-tile-box kano-reveal kano-del-1">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm8.57-4.75c-.21-.48-.68-.8-1.21-.8h-1.36c-.55 0-1-.45-1-1v-2c0-.55-.45-1-1-1H11V7c0-.55-.45-1-1-1H8V4.5c0-.28.22-.5.5-.5H14c1.1 0 2 .9 2 2v1h2c1.1 0 2 .9 2 2v2.6c0 .87-.57 1.66-1.43 1.83z"/></svg>
+            <h4>Наличными курьеру</h4>
+            <p>Удобный классический расчет лично в руки при получении товара (доступно для жителей Бишкека).</p>
+        </div>
+        <div class="kano-tile-box kano-reveal kano-del-2">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M21 7.28V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-2.28c.59-.35 1-.98 1-1.72V9c0-.74-.41-1.37-1-1.72zM20 12c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
+            <h4>Переводы и кошельки</h4>
+            <p>Быстрая оплата на кошельки Элсом, О!Деньги, MegaPay, Balance или прямой перевод на Mbank.</p>
+        </div>
+        <div class="kano-tile-box kano-reveal kano-del-3">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+            <h4>Безналичный расчет</h4>
+            <p>Официальная оплата для оптовых покупателей и юридических лиц с предоставлением всех закрывающих документов.</p>
+        </div>
+    </div>
+
+    <div class="kano-perks-grid kano-reveal kano-del-3">
+        <div class="kano-perk-card">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <div>
+                <h5>Точный подбор размера</h5>
+                <p>Менеджер перепроверит мерки одежды перед отправкой, чтобы вещь подошла идеально.</p>
+            </div>
+        </div>
+        <div class="kano-perk-card">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.3 14.71L11 12.41V7h2v4.41l3.71 3.71-1.42 1.42z"/></svg>
+            <div>
+                <h5>Максимальная скорость</h5>
+                <p>Мы работаем локально, поэтому вам не придется ждать посылку неделями из-за границы.</p>
+            </div>
+        </div>
+        <div class="kano-perk-card">
+            <svg class="kano-tile-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <div>
+                <h5>Гибкость сервиса</h5>
+                <p>Мы всегда готовы пойти навстречу, если вам требуется срочная доставка к определенному времени.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+ 
+<footer id="contacts" class="footer animate-on-scroll">
+        <div class="container footer__container">
+            
+            <div class="footer__about">
+                <span class="footer__logo">
+                    <img src="ChatGPT Image 28 мая 2026 г., 15_02_30.png" alt="KANO MEN">
+                </span>
+               
+              
+            </div>
+
+            <div class="footer__links">
+                <h3>НАВИГАЦИЯ</h3>
+                <ul>
+                    <li><a href="index.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="optom.html">Оптом</a></li>
+                    <li><a href="oplata.html">Доставка и оплата</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__socials-block">
+                <h3>МЫ В СОЦСЕТЯХ</h3>
+                <p class="footer__phone">++996 (999) 25-24-26</p>
+                
+                <div class="footer__socials">
+                    <a href="https://t.me/Canocollection" target="_blank" rel="noopener noreferrer" class="social-icon social-icon--telegram" title="Telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    
+                    <a href="https://wa.me/996999252426" target="_blank" rel="noopener noreferrer" class="social-icon social-icon--whatsapp" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    
+                    <a href="https://instagram.com/kano_collections" target="_blank" rel="noopener noreferrer" class="social-icon social-icon--instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+  <p class="footer__copy">&copy; 2026 KANO MEN. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+         
+
+
+    
+    const burgerMenu = document.getElementById('burger-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    burgerMenu.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav__link').forEach(link => {
+        link.addEventListener('click', () => {
+            burgerMenu.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+
+
+    if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-theme');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+
+    if (themeToggle) {
+        const themeIcon = themeToggle.querySelector('i');
+
+        if (document.body.classList.contains('dark-theme') && themeIcon) {
+            themeIcon.className = 'fas fa-moon';
+        } else if (themeIcon) {
+            themeIcon.className = 'fas fa-sun';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            themeToggle.classList.add('clicked');
+            
+            setTimeout(() => {
+                document.body.classList.toggle('dark-theme');
+                
+                if (document.body.classList.contains('dark-theme')) {
+                    if (themeIcon) themeIcon.className = 'fas fa-moon';
+                    localStorage.setItem('theme', 'dark');  
+                } else {
+                    if (themeIcon) themeIcon.className = 'fas fa-sun';
+                    localStorage.setItem('theme', 'light'); 
+                }
+                
+                themeToggle.classList.remove('clicked');
+            }, 250);
+        });
+    }
+});
+
+  
+
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-theme');
+        
+       
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            if (themeToggle) {
+                const themeIcon = themeToggle.querySelector('i');
+                if (themeIcon) {
+                    themeIcon.className = 'fas fa-moon';
+                }
+            }
+        });
+    }
+
+
+ const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, {
+    threshold: 0.1 
+});
+
+
+document.querySelectorAll('.animate-on-scroll, .animate-on-scroll-grid').forEach((el) => {
+    scrollObserver.observe(el);
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const container = entry.target;
+                
+                const title = container.previousElementSibling;
+                if (title && title.classList.contains('kano-grid-title')) {
+                    title.classList.add('kano-visible');
+                }
+
+                const cards = container.querySelectorAll('.kano-tile-box, .kano-perk-card');
+                cards.forEach((card, index) => {
+                    card.style.animationDelay = `${index * 0.15}s`;
+                    card.classList.add('kano-visible');
+                });
+
+                observer.unobserve(container);
+            }
+        });
+    }, observerOptions);
+
+    const mainBanner = document.querySelector('.kano-main-banner');
+    if (mainBanner) {
+        const bannerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    mainBanner.classList.add('kano-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        bannerObserver.observe(mainBanner);
+    }
+
+    const grids = document.querySelectorAll('.kano-tiles-grid, .kano-perks-grid');
+    grids.forEach(grid => {
+        observer.observe(grid);
+    });
+});
+
+    </script>
+</body>
+</html>
